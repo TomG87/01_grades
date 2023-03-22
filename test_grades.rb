@@ -14,21 +14,12 @@ require_relative 'grades.rb'
 # end
 
 # # Test 2
-puts
-puts "TEST #2: Typical B grade"
-if final_grade([100.0, 90.0, 80.0, 80.0]) == "B"
-	puts "TEST #2 passed"
-else
-	puts "TEST #2 failed"
-end
-
-# # Test 3
 # puts
-# puts "TEST #3: Typical C grade"
-# if final_grade([70.0, 90.0, 72.0, 77.0]) == "C"
-# 	puts "TEST #3 passed"
+# puts "TEST #2: Typical B grade"
+# if final_grade([100.0, 90.0, 80.0, 80.0]) == "B"
+# 	puts "TEST #2 passed"
 # else
-# 	puts "TEST #3 failed"
+# 	puts "TEST #2 failed"
 # end
 
 # # Test 3
@@ -69,10 +60,10 @@ end
 
 # # Test 7
 # puts
-# puts "TEST #7: Ensure that rounding is taking place"
-# if final_grade([88.0, 90.0, 85.0, 95.0]) == "A"
-# 	puts "TEST #7 passed"
-# else
-# 	puts "TEST #7 failed"
-# 	puts "(NOTE: The average is 89.5, which should round up to 90.)"
-# end
+puts "TEST #7: Ensure that rounding is taking place"
+if final_grade([88.0, 90.0, 85.0, 95.0]) == "A"
+	puts "TEST #7 passed"
+else
+	puts "TEST #7 failed"
+	puts "(NOTE: The average is 89.5, which should round up to 90.)"
+end
