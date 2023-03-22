@@ -6,21 +6,21 @@ require_relative 'grades.rb'
 # # Tests
 
 # # Test 1
-puts "TEST #1: Typical A grade"
-if final_grade([100.0, 90.0, 80.0, 90.0]) == "A"
-	puts "TEST #1 passed"
-else
-	puts "TEST #1 failed"
-end
+# puts "TEST #1: Typical A grade"
+# if final_grade([100.0, 90.0, 80.0, 90.0]) == "A"
+# 	puts "TEST #1 passed"
+# else
+# 	puts "TEST #1 failed"
+# end
 
 # # Test 2
-# puts
-# puts "TEST #2: Typical B grade"
-# if final_grade([100.0, 90.0, 80.0, 80.0]) == "B"
-# 	puts "TEST #2 passed"
-# else
-# 	puts "TEST #2 failed"
-# end
+puts
+puts "TEST #2: Typical B grade"
+if final_grade([100.0, 90.0, 80.0, 80.0]) == "B"
+	puts "TEST #2 passed"
+else
+	puts "TEST #2 failed"
+end
 
 # # Test 3
 # puts

@@ -1,9 +1,20 @@
 def final_grade(array)
-  total = 0
+  sum = 0
   array.each do |grade|
-    total += grade 
+    sum += grade 
   end
-  return total/(array).length
+  if sum/(array).length >= 90.0
+    return "A"
+  elsif (sum/(array).length).between?(80,89)
+    return "B"
+  elsif (sum/(array).length).between?(70,79)
+    return "C"
+  elsif (sum/(array).length).between?(60,69)
+    return "D"
+  elsif sum/(array).length < 60
+    return "F"
+  else
+    return "Incomplete" 
+  end 
 end
 
-p final_grade([95.0, 92.0, 99.0, 88.0, 96.0])
