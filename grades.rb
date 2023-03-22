@@ -3,7 +3,10 @@ def final_grade(array)
   array.each do |grade|
     sum += grade 
   end
-  if (sum/(array).length).round >= 90.0
+  
+  if array.length == 0
+    p "I" 
+  elsif(sum/(array).length).round >= 90.0
     return "A"
   elsif (sum/(array).length).round.between?(80,89)
     return "B"
@@ -12,9 +15,7 @@ def final_grade(array)
   elsif (sum/(array).length).round.between?(60,69)
     return "D"
   elsif (sum/(array).length).round < 60
-    return "F"
-  else
-    return "I" 
+    return "F" 
   end 
 end
 

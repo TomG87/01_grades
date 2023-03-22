@@ -50,20 +50,20 @@ require_relative 'grades.rb'
 # end
 
 # # Test 6
-# puts
-# puts "TEST #6: Student took no tests"
-# if final_grade([]) == "I"
-# 	puts "TEST #6 passed"
-# else
-# 	puts "TEST #6 failed"
-# end
+puts
+puts "TEST #6: Student took no tests"
+if final_grade([]) == "I"
+	puts "TEST #6 passed"
+else
+	puts "TEST #6 failed"
+end
 
 # # Test 7
 # puts
-puts "TEST #7: Ensure that rounding is taking place"
-if final_grade([88.0, 90.0, 85.0, 95.0]) == "A"
-	puts "TEST #7 passed"
-else
-	puts "TEST #7 failed"
-	puts "(NOTE: The average is 89.5, which should round up to 90.)"
-end
+# puts "TEST #7: Ensure that rounding is taking place"
+# if final_grade([88.0, 90.0, 85.0, 95.0]) == "A"
+# 	puts "TEST #7 passed"
+# else
+# 	puts "TEST #7 failed"
+# 	puts "(NOTE: The average is 89.5, which should round up to 90.)"
+# end
